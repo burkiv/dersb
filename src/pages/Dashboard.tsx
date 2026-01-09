@@ -12,7 +12,6 @@ export function Dashboard() {
         acc + course.instructors.reduce((a, i) => a + i.videos.length, 0), 0)
     const totalPodcasts = courseData.courses.reduce((acc, c) => acc + c.podcasts.length, 0)
     const totalNotes = courseData.courses.reduce((acc, c) => acc + c.notes.length, 0)
-    const totalQuizzes = courseData.courses.reduce((acc, c) => acc + c.quizzes.length, 0)
 
     const stats = [
         {

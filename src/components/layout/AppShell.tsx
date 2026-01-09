@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation, Outlet } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Home, BookOpen, Settings, Menu, X } from 'lucide-react'
 import { AudioPlayer } from '../AudioPlayer'
@@ -41,8 +41,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                                     key={item.path}
                                     to={item.path}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${isActive
-                                            ? 'bg-gradient-to-r from-violet-500/20 to-pink-500/20 text-white border border-violet-500/30'
-                                            : 'text-[rgb(var(--text-secondary))] hover:bg-white/5 hover:text-white'
+                                        ? 'bg-gradient-to-r from-violet-500/20 to-pink-500/20 text-white border border-violet-500/30'
+                                        : 'text-[rgb(var(--text-secondary))] hover:bg-white/5 hover:text-white'
                                         }`}
                                 >
                                     <item.icon size={20} />
@@ -97,8 +97,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                                             to={item.path}
                                             onClick={() => setMobileMenuOpen(false)}
                                             className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${isActive
-                                                    ? 'bg-gradient-to-r from-violet-500/20 to-pink-500/20 text-white'
-                                                    : 'text-[rgb(var(--text-secondary))] hover:bg-white/5'
+                                                ? 'bg-gradient-to-r from-violet-500/20 to-pink-500/20 text-white'
+                                                : 'text-[rgb(var(--text-secondary))] hover:bg-white/5'
                                                 }`}
                                         >
                                             <item.icon size={20} />
@@ -138,8 +138,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                                         key={item.path}
                                         to={item.path}
                                         className={`flex flex-col items-center py-2 px-4 rounded-xl transition-all ${isActive
-                                                ? 'text-[rgb(var(--primary-light))]'
-                                                : 'text-[rgb(var(--text-muted))]'
+                                            ? 'text-[rgb(var(--primary-light))]'
+                                            : 'text-[rgb(var(--text-muted))]'
                                             }`}
                                     >
                                         <item.icon size={22} />

@@ -4,7 +4,8 @@ import { persist } from 'zustand/middleware'
 interface Track {
     id: string
     title: string
-    artist: string
+    artist?: string
+    subject?: string
     audioUrl: string
 }
 
